@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+main h2 {
+  color: black;
+  font-weight: 700;
+}
+
+body,
+main,
+figcaption {
+    @include fColumn
+}
