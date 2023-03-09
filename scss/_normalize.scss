@@ -1,14 +1,24 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: $font-family;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
+  transition: .6s;
+}
+
+small {
+  color: $defaultColor;
 }
 
 main h2 {
@@ -17,7 +27,21 @@ main h2 {
 }
 
 body,
+header,
 main,
-figcaption {
+figcaption,
+main form
+{
     @include fColumn
+}
+
+header {
+  background-image: url(/img/bg-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header > article {
+  background-color: rgba(0, 0, 0, 0.8);
 }
