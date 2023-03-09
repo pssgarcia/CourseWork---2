@@ -1,0 +1,39 @@
+@media (min-width: $mobileScreen) {
+
+   
+    /* FOOTER */
+    footer {
+        background-color: $darkGray;
+
+        > article {
+            border-top: 2px solid dimgray;
+            padding: 5% 7%;
+            @include fColumn;
+            row-gap: 2vh;
+
+            > p {
+                color: $gainsBoro;
+                text-align: center;
+                
+                a {
+                    color: $defaultColor;
+                }
+            }
+            > ul {
+                display: flex;
+                justify-content: center;
+                column-gap: 7vw;
+                
+                li {
+                    color: $gainsBoro;
+                }
+            }
+
+        }
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+}
