@@ -1,11 +1,68 @@
 @media (min-width: $mobileScreen) {
+    header{
+        >section{
+            background-color: $darkGray;
+            @include fColumn;
+            @include fCenter;
+            a{
+                color: $white;
+            }
+            span{
+                color: $white;
+            }
+        }
+        .nav{
+            background-color: $white;
+            display: flex;
+            height: 5vh;
+            div{
+                display: flex;
+                @include fCenter;
+                column-gap: 2vh;
+                padding-left: 2vh;
+                i{
+                    color: $defaultColor;
+                }
+                p{
+                    color: $defaultColor;
+                }
+            }
+        }
+    }
 
-    nav{
-        display: none
+    nav {
+        @include fCenter;
+        display: flex;
+        >ul{
+            display: none
+        }
+        >a{
+            display: none
+        }
+        details{
+            width: 100%;
+            text-align: right;
+            position: absolute;
+            > ul {
+                position: absolute;
+                background-color: white;
+                width: 100%;
+                row-gap: 1vh;
+            }
+            li {
+                display: flex;
+            }
+            a {
+                width: 100%;
+                color: black;
+                padding: 2%;
+                text-transform: uppercase;
+            }
+        }
     }
     main{
         @include fColumn;
-        row-gap: 13vh
+        row-gap: 13vh;
     }
     // PART-1 START
     .part-1{
