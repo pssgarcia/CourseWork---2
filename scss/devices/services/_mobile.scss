@@ -266,4 +266,71 @@
             }
         }
     }
+    footer{
+        background-color: $darkGray;
+        >section{
+            padding-left: 2vh;
+            @include fColumn;
+            row-gap: 3vh;
+            article{
+                @include fColumn;
+                row-gap: 3vh;
+                h3{
+                    color: $defaultColor;
+                }
+                aside{
+                    i{
+                        color: $white;
+                    }
+                    adress{
+                        color: $white;
+                    }
+                    a{
+                        color: $white;
+                    }
+                }
+                ul{
+                    display: flex;
+                    column-gap: 3vh;
+                    li{
+                        position: relative;
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: 2px solid $white;
+                        a{
+                            color: $white;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        > article{
+            @include fColumn;
+            @include fCenter;
+            height: 25vh;
+            text-align: center;
+            row-gap: 4vh;
+            p{
+                color: $white;
+                a{
+                    color: $defaultColor;
+                }
+            }
+            ul{
+                display: flex;
+                column-gap: 3vh;
+                li{
+                    color: $white;
+                }
+            }
+        }
+        
+    }
 }
