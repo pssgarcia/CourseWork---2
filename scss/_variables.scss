@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 // SCREEN SIZES
-$mobileScreen: 200px;
-$tabletScreen: 600px;
+$mobileScreen: 300px;
+$tabletScreen: 700px;
 $desktopScreen: 1000px;
 
 // COLORS
@@ -11,3 +12,5 @@ $gray         : #898989;
 $gainsBoro    : #F2F2F4;
 $darkGray     : #1F1F2E;
 
+// FONT-FAMILY
+$font-family: 'Inter', sans-serif;
