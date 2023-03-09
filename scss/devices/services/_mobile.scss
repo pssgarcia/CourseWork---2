@@ -1,12 +1,57 @@
 @media (min-width: $mobileScreen) {
-    body{
-        background-color: black;
+
+    nav{
+        display: none
+    }
+    main{
+        padding: 2%;
     }
     .part-1{
+        @include fColumn;
+        @include fCenter;
+        
         >section{
-            h5{
+            height: 120px;
+            row-gap: 2vh;
+            @include fColumn;
+            @include fCenter;
+            >h5{
                 color: $defaultColor;
 
+            }
+            >h3{
+                font-size: 30px;
+            }
+        }
+        article{
+            @include fColumn;
+            row-gap: 10vh;
+        }
+        aside{
+            @include fColumn;
+            @include fCenter;
+            text-align: center;
+            row-gap: 3vh;
+            >section{
+                background-color: $defaultColor;
+                display: flex;
+                column-gap: 2vh;
+                @include fCenter;
+                height: 60px;
+                width: 85%;
+                i{
+                    font-size: 20px;
+                }
+                p{
+                    color: white;
+                }
+            }
+            a{
+               color: $defaultColor;
+            }
+            hr{
+                border: 1px solid $gray ;
+                width: 100%;
             }
         }
     }
