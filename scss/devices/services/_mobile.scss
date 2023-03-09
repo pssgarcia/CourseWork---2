@@ -7,10 +7,10 @@
         @include fColumn;
         row-gap: 13vh
     }
+    // PART-1 START
     .part-1{
         @include fColumn;
         @include fCenter;
-        // padding-bottom: 15vh;
         
         >section{
             height: 120px;
@@ -60,6 +60,8 @@
             }
         }
     }
+    // PART-1 END
+    // PART-2 START
     .part-2{
         @include fColumn;
         row-gap: 8vh;
@@ -110,6 +112,68 @@
                     background-color: $darkGray;
                     color: $white;
                     
+                }
+            }
+        }
+    }
+    // PART-2 END
+    // PART-3 START
+    .part-3{
+        padding-bottom: 7vh;
+        >section{
+            height: 120px;
+            row-gap: 2vh;
+            @include fColumn;
+            @include fCenter;
+            text-align: center;
+            >h5{
+                color: $defaultColor;
+
+            }
+            >h3{
+                font-size: 30px;
+            }
+        }
+        article{
+            @include fColumn;
+            @include fCenter;
+            row-gap: 3vh;
+            text-align: center;
+            aside{
+                background-color: $gainsBoro;
+                row-gap: 3vh;
+                padding-top: 10px;
+                padding-bottom: 25px;
+                @include fColumn;
+                @include fCenter;
+                text-align: center;
+                width: 85%;
+                p{
+                    color: $gray;
+                    small{
+                        color: black;
+                        font-size: 30px;
+                    }
+                }
+                div{
+                    background-color: $defaultColor;
+                    width: 100%;
+                    height: 10vh;
+                    @include fColumn;
+                    @include fCenter;
+                    text-align: center;
+                    h6{
+                        font-size: 30px;
+                    }
+                }
+                a{
+                    background-color: $defaultColor;
+                    color: $white;
+                    width: 40%;
+                    height: 25px;
+                    @include fColumn;
+                    @include fCenter;
+                    text-align: center;
                 }
             }
         }
