@@ -4,11 +4,13 @@
         display: none
     }
     main{
-        padding: 2%;
+        @include fColumn;
+        row-gap: 13vh
     }
     .part-1{
         @include fColumn;
         @include fCenter;
+        // padding-bottom: 15vh;
         
         >section{
             height: 120px;
@@ -46,12 +48,69 @@
                     color: white;
                 }
             }
+            p{
+                color: $gray ;
+            }
             a{
                color: $defaultColor;
             }
             hr{
                 border: 1px solid $gray ;
                 width: 100%;
+            }
+        }
+    }
+    .part-2{
+        @include fColumn;
+        row-gap: 8vh;
+        background-color: $gainsBoro;
+        >section{
+            padding-top: 5vh;
+            padding-left: 3vh;
+            row-gap: 2vh;
+            @include fColumn;
+            >aside{
+                h5{
+                    color: $defaultColor;
+                }
+                >h3{
+                    font-size: 30px;
+                }
+            }
+            article{
+                row-gap: 4vh;
+                @include fColumn;
+                >aside{
+                    >h3{
+                        font-size: 24px;
+                        color: $defaultColor;
+                    }
+                }
+            }
+        }
+        form{
+            @include fColumn;
+            @include fCenter;
+            div{
+                background-color: $defaultColor;
+                @include fColumn;
+                @include fCenter;
+                row-gap: 3vh;
+                width: 85%;
+                height: 50vh;
+                input,select{
+                    width: 80%;
+                    height: 12%;
+                    border: none;
+                }
+                ::placeholder{
+                    padding-left: 8px;
+                }
+                [type="submit"]{
+                    background-color: $darkGray;
+                    color: $white;
+                    
+                }
             }
         }
     }
