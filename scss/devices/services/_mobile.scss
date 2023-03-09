@@ -4,17 +4,21 @@
             background-color: $darkGray;
             @include fColumn;
             @include fCenter;
-            a{
-                color: $white;
-            }
-            span{
-                color: $white;
+            aside{
+                padding-top: 2vh;
+                height: 30px;
+                a{
+                    color: $white;
+                }
+                span{
+                    color: $white;
+                }
             }
         }
         .nav{
             background-color: $white;
             display: flex;
-            height: 5vh;
+            height: 8vh;
             div{
                 display: flex;
                 @include fCenter;
@@ -22,9 +26,36 @@
                 padding-left: 2vh;
                 i{
                     color: $defaultColor;
+                    font-size: 30px;
                 }
                 p{
                     color: $defaultColor;
+                    font-size: 20px;
+                }
+            }
+        }
+        >article{
+            section{
+                height: 50vh;
+                @include fColumn;
+                @include fCenter;
+                row-gap: 3vh;
+                h1{
+                    color: $white;
+                    font-size: 40px;
+                }
+                aside{
+                    display: flex;
+                    column-gap: 3vh;
+                    a{
+                        color: $white;
+                    }
+                    small{
+                        height: 10px;
+                        width: 10px;
+                        background-color: white;
+                        border-radius: 5px;
+                    }
                 }
             }
         }
@@ -79,7 +110,7 @@
 
             }
             >h3{
-                font-size: 30px;
+                font-size: 27px;
             }
         }
         article{
