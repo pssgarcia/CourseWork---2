@@ -1,0 +1,13 @@
+@media (min-width: $mobileScreen) {
+    body{
+        background-color: black;
+    }
+    .part-1{
+        >section{
+            h5{
+                color: $defaultColor;
+
+            }
+        }
+    }
+}
