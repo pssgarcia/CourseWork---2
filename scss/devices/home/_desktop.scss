@@ -1,4 +1,52 @@
 @media (min-width: $desktopScreen) {
+  // TEAM
+  .team {
+      > section {
+          flex-wrap: nowrap;
+          column-gap: 4vh;
+      }
+
+      figure {
+          width: 19%;
+          > img {
+              height: 40vh;
+          }
+      }
+
+      figcaption {
+          height: 12vh;
+          transition: .6s;
+          position: relative;
+
+            > aside {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                column-gap: 3vh;
+                height: 100%;
+                bottom: -20%;
+                @include fCenter;
+                transition: .6s;
+                display: flex; 
+                opacity: 0;
+                  &:hover {
+                      opacity: 1;
+                      bottom: 0%;
+                      background-color: $defaultColor;
+                  }
+            }
+
+          a {
+              color: $white;
+              font-size: 23px;
+                &:hover {
+                    color: indigo;
+                }
+          }
+      }
+
+  }
+  
   // NEWS
   .news {
       figcaption {
