@@ -3,7 +3,7 @@
     header{
         >section{
             background-color: $darkGray;
-            @include fColumn;
+            @include fColumn(0vh);
             @include fCenter;
             aside{
                 padding-top: 2vh;
@@ -43,9 +43,8 @@
         >article{
             section{
                 height: 50vh;
-                @include fColumn;
+                @include fColumn(3vh);
                 @include fCenter;
-                row-gap: 3vh;
                 h1{
                     color: $white;
                     font-size: 40px;
@@ -78,6 +77,10 @@
             width: 100%;
             text-align: right;
             position: absolute;
+            summary{
+                border: 1px solid $gray;
+                padding: 5px;
+            }
             > ul {
                 position: absolute;
                 background-color: white;
@@ -96,18 +99,16 @@
         }
     }
     main{
-        @include fColumn;
-        row-gap: 13vh;
+        @include fColumn(13vh);
     }
     // PART-1 START
     .part-1{
-        @include fColumn;
+        @include fColumn(0vh);
         @include fCenter;
         
         >section{
             height: 120px;
-            row-gap: 2vh;
-            @include fColumn;
+            @include fColumn(2vh);
             @include fCenter;
             >h5{
                 color: $defaultColor;
@@ -118,14 +119,12 @@
             }
         }
         >article{
-            @include fColumn;
-            row-gap: 10vh;
+            @include fColumn(10vh);
         }
         aside{
-            @include fColumn;
+            @include fColumn(3vh);
             @include fCenter;
             text-align: center;
-            row-gap: 3vh;
             >section{
                 background-color: $defaultColor;
                 display: flex;
@@ -155,14 +154,12 @@
     // PART-1 END
     // PART-2 START
     .part-2{
-        @include fColumn;
-        row-gap: 8vh;
+        @include fColumn(8vh);
         background-color: $gainsBoro;
         >section{
             padding-top: 5vh;
             padding-left: 3vh;
-            row-gap: 2vh;
-            @include fColumn;
+            @include fColumn(2vh);
             >aside{
                 h5{
                     color: $defaultColor;
@@ -172,8 +169,7 @@
                 }
             }
             article{
-                row-gap: 4vh;
-                @include fColumn;
+                @include fColumn(4vh);
                 >aside{
                     >h3{
                         font-size: 24px;
@@ -183,13 +179,12 @@
             }
         }
         form{
-            @include fColumn;
+            @include fColumn(0vh);
             @include fCenter;
             >section{
                 background-color: $defaultColor;
-                @include fColumn;
+                @include fColumn(3vh);
                 @include fCenter;
-                row-gap: 3vh;
                 width: 85%;
                 height: 50vh;
                 input,select{
@@ -214,8 +209,7 @@
         padding-bottom: 7vh;
         >section{
             height: 120px;
-            row-gap: 2vh;
-            @include fColumn;
+            @include fColumn(2vh);
             @include fCenter;
             text-align: center;
             >h5{
@@ -227,16 +221,14 @@
             }
         }
         article{
-            @include fColumn;
+            @include fColumn(3vh);
             @include fCenter;
-            row-gap: 3vh;
             text-align: center;
             aside{
                 background-color: $gainsBoro;
-                row-gap: 3vh;
                 padding-top: 10px;
                 padding-bottom: 25px;
-                @include fColumn;
+                @include fColumn(3vh);
                 @include fCenter;
                 text-align: center;
                 width: 85%;
@@ -251,7 +243,7 @@
                     background-color: $defaultColor;
                     width: 100%;
                     height: 10vh;
-                    @include fColumn;
+                    @include fColumn(0vh);
                     @include fCenter;
                     text-align: center;
                     h6{
@@ -263,7 +255,7 @@
                     color: $white;
                     width: 40%;
                     height: 25px;
-                    @include fColumn;
+                    @include fColumn(0vh);
                     @include fCenter;
                     text-align: center;
                 }
@@ -278,13 +270,10 @@
         background-color: $darkGray;
         >section{
             padding-left: 2vh;
-            @include fColumn;
-            row-gap: 3vh;
-            article{
-                @include fColumn;
-                row-gap: 3vh;
-                
-                aside{
+            @include fColumn(3vh);
+            >article{
+                @include fColumn(3vh);                
+                >aside{
                     
                     i,span,a{
                         color: $white;
@@ -312,12 +301,13 @@
                 }
             }
             section{
-                @include fColumn;
+                @include fColumn(0vh);
                 i,a{
                     color: $white;
                 }
             }
-            aside{
+            >aside{
+                @include fColumn(3vh);
                 p{
                     color: $white;
                 }
@@ -342,11 +332,10 @@
             }
         }
         > article{
-            @include fColumn;
+            @include fColumn(4vh);
             @include fCenter;
             height: 25vh;
             text-align: center;
-            row-gap: 4vh;
             p{
                 color: $white;
                 a{

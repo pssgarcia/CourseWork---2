@@ -32,7 +32,7 @@
         }
     }
     .part-3{
-        @include fColumn;
+        @include fColumn(0vh);
         align-items: center;
         article{
             flex-direction: row;
