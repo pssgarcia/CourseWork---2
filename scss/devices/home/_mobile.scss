@@ -140,21 +140,22 @@
             > img {
                 width: 100%;             
             }
+        }
 
-            > figcaption {
-                background-color: $defaultColor;
-                width: 100%;
-                display: flex;
-                @include fCenter;
-                font-size: 24px;
-                font-weight: 800;
-                height: 9vh;
-            }
+        figcaption {
+            background-color: $defaultColor;
+            width: 100%;
+            display: flex;
+            @include fCenter;
+            font-size: 24px;
+            font-weight: 800;
+            height: 9vh;
         }
 
         > article {
             @include fColumn(2vh);
             width: 90%;
+            padding-bottom: 5vh;
 
             > small {
                 font-weight: 900;
@@ -168,26 +169,83 @@
             }
         }
 
-        > section {
-            @include fColumn(2vh);
-            width: 90%;
+        > .ship {
+            @include fColumn(5vh);
+            width: 100%;
+            background-color: $gainsBoro;
+            padding-bottom: 7vh;
 
-            > small {
+            > figcaption {
+                @include fColumn(2vh);
+                align-items: flex-start;
+                height: auto;
+                font-weight: normal;
+                background-color: unset;
+                font-size: inherit;
+                width: 90%;
+            }
+
+            img {
+                width: 90%;
+                height: 50vh;
+            }
+
+            small {
                 font-weight: 900;
                 font-size: 15px;
             }
 
-            > h2 {
+            h2 {
               font-weight: 800;
               font-size: 27px;
               width: 80%;
             }
+
+            li {
+                display: flex;
+                align-items: center;
+                column-gap: 2vh
+            }
+
+            i {
+                color: $defaultColor;
+            }
+
+            a {
+                background-color: $defaultColor;
+                color: $white;
+                width: 30%;
+                padding: 3%;
+                text-align: center;
+                font-weight: 600
+            }
         } 
+    }
+
+    // TEAM
+    .team {
+        row-gap: 4vh;
+        > article {
+            @include fColumn(1vh);
+            align-items: center;
+            > small {
+                    font-weight: 800;
+                    font-size: 15px;
+                    text-transform: uppercase;
+            }
+            > h2 {
+                font-weight: 900;
+                font-size: 30px;
+                width: 80%;
+                text-align: center
+            }
+
+        }
     }
 
     // NEWS
     .news {
-        @include fColumn(4vh);
+        row-gap: 4vh;
         align-items: center;
         > article {
                 @include fColumn(1vh);
