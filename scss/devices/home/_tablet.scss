@@ -1,6 +1,76 @@
 @media (min-width: $tabletScreen) {
+    // TEAM
+    .team {
+        > section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 3vh;
+            row-gap: 4vh;
+        }
+
+        figure {
+            width: 40%;
+             > img {
+                height: 27vh;
+             }
+        }
+
+        figcaption {
+            height: 8vh;
+        }
+
+        > article {
+            > h2 {
+              font-size: 35px;
+            }
+
+            > small {
+              font-size: 18px;
+            }
+        }
+    }
+  
     // NEWS
-    
+    .news {
+        row-gap: 3vh;
+
+        > article {
+            > h2 {
+                font-size: 35px;
+              }
+
+            > small {
+                font-size: 18px;
+            }
+        }
+
+        > section {
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 3vh;
+        }
+
+        figure {
+            width: 40%;
+            > img {
+                height: 20vh;
+            }
+        }
+
+        figcaption {
+            width: 85%;
+            row-gap: 1vh;
+            padding: 2vh;
+            a {
+                width: 40%;
+                transition: .6s;
+                &:hover {
+                    color: $gray;
+                    border-color: $gray;
+                }
+            }
+    }
     // FOOTER
     .footer-top {
           flex-direction: row;
@@ -72,4 +142,6 @@
                 justify-content: right;
             }
         }
+}
+
 }
