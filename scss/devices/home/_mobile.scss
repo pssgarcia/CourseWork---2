@@ -4,8 +4,7 @@
     }
 
   // HEADER
-    header {
-        
+    header {   
         .top {
               display: flex;
               flex-wrap: wrap;
@@ -38,21 +37,21 @@
                 }
             }
         }
-      }
-          aside {
-            display: flex;
-            column-gap: 2vh;
-            font-size: 13px;
-            
-            > span {
-              color: white;
-            }
-
-            i,
-            a {
-              color: $white;
-            }
+        aside {
+          display: flex;
+          column-gap: 2vh;
+          font-size: 13px;
+          
+          > span {
+            color: white;
           }
+
+          i,
+          a {
+            color: $white;
+          }
+        }
+      }
 
         .bottom {
             @include fColumn;
@@ -70,6 +69,8 @@
                 color: $white;
                 font-size: 35px;
                 font-weight: 900;
+                width: 50%;
+                text-align: center;
             }
 
             form {
@@ -119,5 +120,56 @@
         > ul {
             display: none;
         }
-    }     
+    }
+    
+    // MAIN
+    .intro,
+    .team,
+    .news {
+      padding-top: 10vh;
+      @include fColumn;
+    }
+
+    .intro {
+        row-gap: 5vh;
+        align-items: center; 
+        > figure {
+            @include fColumn;
+            align-items: center;
+            width: 90%;
+            > img {
+                width: 100%;             
+            }
+
+            > figcaption {
+                background-color: $defaultColor;
+                width: 100%;
+                display: flex;
+                @include fCenter;
+                font-size: 24px;
+                font-weight: 800;
+                height: 9vh;
+            }
+        }
+
+        > article {
+            @include fColumn;
+            width: 90%;
+
+            > small {
+                font-weight: 900;
+                font-size: 15px;
+            }
+            
+            > h2 {
+                font-weight: 800;
+                font-size: 27px;
+                width: 80%;
+            }
+        }
+
+        > section {
+            width: 90%;
+        } 
+    }
 }
