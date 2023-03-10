@@ -309,7 +309,12 @@
                 }
         }
 
-        > figure {
+        > section {
+            @include fColumn(5vh);
+            align-items: center;
+        }
+
+        figure {
                 @include fColumn(0vh);
                 align-items: center;
                 width: 85%;
