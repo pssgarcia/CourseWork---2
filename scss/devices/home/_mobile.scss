@@ -52,7 +52,7 @@
             align-items: center;
             background-color: $white;
             padding: 3vh;
-            width: 90%;
+            width: 89%;
             position: relative;
             
             > a {
@@ -419,6 +419,9 @@
 
         > aside {
             @include fColumn(3vh);
+            > p {
+                width: 80%;
+            }
         }
 
         form {
