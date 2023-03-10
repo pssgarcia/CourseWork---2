@@ -1,4 +1,5 @@
 @media (min-width: $mobileScreen) {
+    // HEADER
     header{
         >section{
             background-color: $darkGray;
@@ -19,7 +20,7 @@
             background-color: $white;
             display: flex;
             height: 8vh;
-            div{
+            >aside{
                 display: flex;
                 @include fCenter;
                 column-gap: 2vh;
@@ -31,6 +32,11 @@
                 p{
                     color: $defaultColor;
                     font-size: 20px;
+                }
+            }
+            aside{
+                >a{
+                    display: none
                 }
             }
         }
@@ -67,9 +73,7 @@
         >ul{
             display: none
         }
-        >a{
-            display: none
-        }
+        
         details{
             width: 100%;
             text-align: right;
@@ -113,7 +117,7 @@
                 font-size: 27px;
             }
         }
-        article{
+        >article{
             @include fColumn;
             row-gap: 10vh;
         }
@@ -181,7 +185,7 @@
         form{
             @include fColumn;
             @include fCenter;
-            div{
+            >section{
                 background-color: $defaultColor;
                 @include fColumn;
                 @include fCenter;
@@ -243,7 +247,7 @@
                         font-size: 30px;
                     }
                 }
-                div{
+                >section{
                     background-color: $defaultColor;
                     width: 100%;
                     height: 10vh;
@@ -266,7 +270,11 @@
             }
         }
     }
+    // FOOTER
     footer{
+        h3{
+            color: $defaultColor;
+        }
         background-color: $darkGray;
         >section{
             padding-left: 2vh;
@@ -275,17 +283,10 @@
             article{
                 @include fColumn;
                 row-gap: 3vh;
-                h3{
-                    color: $defaultColor;
-                }
+                
                 aside{
-                    i{
-                        color: $white;
-                    }
-                    address{
-                        color: $white;
-                    }
-                    a{
+                    
+                    i,span,a{
                         color: $white;
                     }
                 }
@@ -307,6 +308,35 @@
                             transform: translate(-50%, -50%);
                             font-size: 15px;
                         }
+                    }
+                }
+            }
+            section{
+                @include fColumn;
+                i,a{
+                    color: $white;
+                }
+            }
+            aside{
+                p{
+                    color: $white;
+                }
+                form{
+                    display: flex;
+                    width: 100%;
+                    padding-bottom: 15vh;
+                    input{
+                        border: none;
+                        width: 100%;
+                        padding: 3%;
+                    }
+                    #email{
+                        width: 55%;
+                    }
+                    #submit{
+                        width: 35%;
+                        background-color: $defaultColor;
+                        color: $gainsBoro;
                     }
                 }
             }
