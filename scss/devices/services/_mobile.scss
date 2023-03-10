@@ -21,14 +21,59 @@
             position: relative;
             background-color: $white;
             width: 96%;
-            // border: 1px solid red;
             display: flex;
             height: 8vh;
             padding-left: 2%;
             padding-right: 2%;
-            aside{
+            section{
                 >a{
                     display: none
+                }
+            }
+        }
+        nav {
+            align-items: center;
+            width: 100%;
+            display: flex;
+            >aside{
+                display: flex;
+                align-items: center;
+                column-gap: 2vh;
+                i{
+                    color: $defaultColor;
+                    font-size: 30px;
+                }
+                p{
+                    color: $defaultColor;
+                    font-size: 20px;
+                }
+            }
+            >ul{
+                display: none
+            }
+            
+            details{
+                width: 95%;
+                text-align: right;
+                position: absolute;
+                summary{
+                    border: 1px solid $gray;
+                    padding: 5px;
+                }
+                > ul {
+                    position: absolute;
+                    background-color: white;
+                    width: 100%;
+                    row-gap: 1vh;
+                }
+                li {
+                    display: flex;
+                }
+                a {
+                    width: 100%;
+                    color: black;
+                    padding: 2%;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -58,52 +103,7 @@
         }
     }
 
-    nav {
-        align-items: center;
-        width: 100%;
-        display: flex;
-        >aside{
-            display: flex;
-            align-items: center;
-            column-gap: 2vh;
-            i{
-                color: $defaultColor;
-                font-size: 30px;
-            }
-            p{
-                color: $defaultColor;
-                font-size: 20px;
-            }
-        }
-        >ul{
-            display: none
-        }
-        
-        details{
-            width: 95%;
-            text-align: right;
-            position: absolute;
-            summary{
-                border: 1px solid $gray;
-                padding: 5px;
-            }
-            > ul {
-                position: absolute;
-                background-color: white;
-                width: 100%;
-                row-gap: 1vh;
-            }
-            li {
-                display: flex;
-            }
-            a {
-                width: 100%;
-                color: black;
-                padding: 2%;
-                text-transform: uppercase;
-            }
-        }
-    }
+    
     main{
         @include fColumn(13vh);
     }
@@ -283,7 +283,7 @@
             padding-top: 2vh;
             padding-left: 2vh;
         width: 96%;
-            height: 60vh;
+            height: 120vh;
             @include fColumn(3vh);
             >article{
                 @include fColumn(3vh);                
