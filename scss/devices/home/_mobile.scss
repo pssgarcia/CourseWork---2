@@ -54,10 +54,9 @@
       }
 
         .bottom {
-            @include fColumn;
+            @include fColumn(4vh);
             @include fCenter;
             height: 50vh;
-            row-gap: 4vh;
 
             > h1 {
                 color: $defaultColor;
@@ -127,14 +126,14 @@
     .team,
     .news {
       padding-top: 10vh;
-      @include fColumn;
+      @include fColumn(0vh);
     }
 
     .intro {
         row-gap: 5vh;
         align-items: center; 
         > figure {
-            @include fColumn;
+            @include fColumn(0vh);
             align-items: center;
             width: 90%;
             > img {
@@ -153,7 +152,7 @@
         }
 
         > article {
-            @include fColumn;
+            @include fColumn(0vh);
             width: 90%;
 
             > small {
@@ -169,8 +168,19 @@
         }
 
         > section {
-            @include fColumn(2);
+            @include fColumn(2vh);
             width: 90%;
+
+            > small {
+                font-weight: 900;
+                font-size: 15px;
+            }
+
+            > h2 {
+              font-weight: 800;
+              font-size: 27px;
+              width: 80%;
+            }
         } 
     }
 }
