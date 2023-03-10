@@ -1,0 +1,46 @@
+@media (min-width: $tabletScreen){
+    .part-1 {
+        article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 7vh;
+            padding: 4%;
+            aside{
+                width: 50%;
+                
+            }
+        }
+    }
+    .part-2{
+        section{
+            >aside{
+                display: flex;
+                flex-direction: column;
+                row-gap: 3vh;
+            }
+            article{
+                display: flex;
+                flex-direction: row;
+                column-gap: 24vh;
+            }
+        }
+        form{
+            div{
+                height: 70vh;
+            }
+        }
+    }
+    .part-3{
+        @include fColumn;
+        align-items: center;
+        article{
+            flex-direction: row;
+            width: 90%;
+            column-gap: 3vh;
+            aside{
+                width: 50%;
+            }
+        }
+    }
+}
