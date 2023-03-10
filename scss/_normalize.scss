@@ -45,3 +45,8 @@ header {
 header > article {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+p {
+  line-height: 1.5;
+  color: $gray;
+}
