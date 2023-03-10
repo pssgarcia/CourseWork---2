@@ -1,0 +1,378 @@
+@media (min-width: $mobileScreen) {
+    // HEADER
+    header{
+        >section{
+            background-color: $darkGray;
+            @include fColumn(0vh);
+            @include fCenter;
+            aside{
+                padding-top: 2vh;
+                height: 30px;
+                a{
+                    color: $white;
+                    font-size: 15px;
+                }
+                span{
+                    color: $white;
+                }
+            }
+        }
+        // NAVEGATION MENU 
+        .navigation{
+            position: relative;
+            background-color: $white;
+            width: 96%;
+            display: flex;
+            height: 8vh;
+            padding-left: 2%;
+            padding-right: 2%;
+            section{
+                >a{
+                    display: none
+                }
+            }
+        }
+        nav {
+            align-items: center;
+            width: 100%;
+            display: flex;
+            >aside{
+                display: flex;
+                align-items: center;
+                column-gap: 2vh;
+                i{
+                    color: $defaultColor;
+                    font-size: 30px;
+                }
+                p{
+                    color: $defaultColor;
+                    font-size: 20px;
+                }
+            }
+            >ul{
+                display: none
+            }
+            // HAMBURGER MENU
+            details{
+                width: 95%;
+                text-align: right;
+                position: absolute;
+                summary{
+                    border: 1px solid $gray;
+                    padding: 5px;
+                }
+                > ul {
+                    position: absolute;
+                    background-color: white;
+                    width: 100%;
+                    row-gap: 1vh;
+                }
+                li {
+                    display: flex;
+                }
+                a {
+                    width: 100%;
+                    color: black;
+                    padding: 2%;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        // HEADER TITLE
+        >article{
+            section{
+                height: 50vh;
+                @include fColumn(3vh);
+                @include fCenter;
+                h1{
+                    color: $white;
+                    font-size: 40px;
+                }
+                aside{
+                    display: flex;
+                    column-gap: 3vh;
+                    a{
+                        color: $white;
+                    }
+                    small{
+                        height: 10px;
+                        width: 10px;
+                        background-color: white;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+    // MAIN
+    main{
+        @include fColumn(13vh);
+    }
+    // PART-1 START
+    .part-1{
+        @include fColumn(0vh);
+        @include fCenter;
+        
+        >section{
+            height: 120px;
+            @include fColumn(2vh);
+            @include fCenter;
+            >h5{
+                color: $defaultColor;
+
+            }
+            >h3{
+                font-size: 27px;
+            }
+        }
+        >article{
+            @include fColumn(10vh);
+        }
+        aside{
+            @include fColumn(3vh);
+            @include fCenter;
+            text-align: center;
+            >section{
+                background-color: $defaultColor;
+                display: flex;
+                column-gap: 2vh;
+                @include fCenter;
+                height: 60px;
+                width: 85%;
+                i{
+                    font-size: 20px;
+                }
+                p{
+                    color: white;
+                }
+            }
+            p{
+                color: $gray ;
+            }
+            a{
+               color: $defaultColor;
+            }
+            hr{
+                border: 1px solid $gray ;
+                width: 100%;
+            }
+        }
+    }
+    // PART-1 END
+    // PART-2 START
+    .part-2{
+        @include fColumn(8vh);
+        background-color: $gainsBoro;
+        >section{
+            padding-top: 5vh;
+            padding-left: 3vh;
+            @include fColumn(2vh);
+            >aside{
+                h5{
+                    color: $defaultColor;
+                }
+                >h3{
+                    font-size: 30px;
+                }
+            }
+            article{
+                @include fColumn(4vh);
+                >aside{
+                    >h3{
+                        font-size: 24px;
+                        color: $defaultColor;
+                    }
+                }
+            }
+        }
+        form{
+            @include fColumn(0vh);
+            @include fCenter;
+            >section{
+                background-color: $defaultColor;
+                @include fColumn(3vh);
+                @include fCenter;
+                width: 85%;
+                height: 50vh;
+                input,select{
+                    width: 80%;
+                    height: 12%;
+                    border: none;
+                }
+                ::placeholder{
+                    padding-left: 8px;
+                }
+                [type="submit"]{
+                    background-color: $darkGray;
+                    color: $white;
+                    
+                }
+            }
+        }
+    }
+    // PART-2 END
+    // PART-3 START
+    .part-3{
+        padding-bottom: 7vh;
+        >section{
+            height: 120px;
+            @include fColumn(2vh);
+            @include fCenter;
+            text-align: center;
+            >h5{
+                color: $defaultColor;
+
+            }
+            >h3{
+                font-size: 30px;
+            }
+        }
+        article{
+            @include fColumn(3vh);
+            @include fCenter;
+            text-align: center;
+            aside{
+                background-color: $gainsBoro;
+                padding-top: 10px;
+                padding-bottom: 25px;
+                @include fColumn(3vh);
+                @include fCenter;
+                text-align: center;
+                width: 85%;
+                p{
+                    color: $gray;
+                    small{
+                        color: black;
+                        font-size: 30px;
+                    }
+                }
+                >section{
+                    background-color: $defaultColor;
+                    width: 100%;
+                    height: 10vh;
+                    @include fColumn(0vh);
+                    @include fCenter;
+                    text-align: center;
+                    h6{
+                        font-size: 30px;
+                    }
+                }
+                a{
+                    background-color: $defaultColor;
+                    color: $white;
+                    width: 40%;
+                    height: 25px;
+                    @include fColumn(0vh);
+                    @include fCenter;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    // PART-3 END
+    // FOOTER
+    footer{
+        @include fColumn(0vh);
+        align-items: center;
+        h3{
+            color: $defaultColor;
+        }
+        hr{
+            width: 100%;
+        }
+        background-color: $darkGray;
+        // FOOTER TOP
+        >section{
+            padding-top: 2vh;
+            padding-left: 2vh;
+        width: 96%;
+            height: 120vh;
+            @include fColumn(3vh);
+            >article{
+                @include fColumn(3vh);                
+                >aside{
+                    
+                    i,span,a{
+                        color: $white;
+                    }
+                }
+                ul{
+                    display: flex;
+                    column-gap: 3vh;
+                    li{
+                        position: relative;
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: 2px solid $white;
+                        a{
+                            color: $white;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            section{
+                @include fColumn(3vh);
+                ul{
+                  @include fColumn(2vh);  
+                }
+                i,a{
+                    color: $white;
+                }
+            }
+            >aside{
+                @include fColumn(3vh);
+                p{
+                    color: $white;
+                }
+                form{
+                    display: flex;
+                    width: 100%;
+                    input{
+                        border: none;
+                        width: 100%;
+                        padding: 3%;
+                    }
+                    #Email{
+                        width: 55%;
+                    }
+                    #Sub{
+                        width: 35%;
+                        background-color: $defaultColor;
+                        color: $gainsBoro;
+                    }
+                }
+            }
+        }
+        // FOOTER BOTTOM
+        > article{
+            @include fColumn(4vh);
+            @include fCenter;
+            height: 25vh;
+            text-align: center;
+            p{
+                color: $white;
+                a{
+                    color: $defaultColor;
+                }
+            }
+            ul{
+                width: 95%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 3vh;
+                li{
+                    color: $white;
+                }
+            }
+        }
+        
+    }
+}

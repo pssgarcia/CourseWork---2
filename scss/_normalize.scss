@@ -21,6 +21,11 @@ small {
   color: $defaultColor;
 }
 
+main p {
+  color: $gray;
+  line-height: 1.5;
+}
+
 main h2 {
   color: black;
   font-weight: 700;
