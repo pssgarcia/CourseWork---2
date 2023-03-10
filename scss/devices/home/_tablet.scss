@@ -135,7 +135,6 @@
     // NEWS
     .news {
         row-gap: 3vh;
-
         > article {
             > h2 {
                 font-size: 35px;
@@ -172,77 +171,77 @@
                 }
             }
     }
-    // FOOTER
-    .footer-top {
-          flex-direction: row;
-          column-gap: 2vh;
-          > article {
-              width: 25%;
-              > h2 {
-                width: 70%;
-              }
-          }
-
-          aside {
-              > a {
-                  font-size: 18px;
-              }
-          }
-
-          .social {
-              column-gap: 1vh;  
-              a {
-                  height: 3vh;
-                  width: 3vh;
-              }
-          }
-
-          > section {
-              width: 25%;
-              > ul {
-                  row-gap: 1vh;
-                  font-size:  18px;
-              }
-          }
-
-          > aside {
-              width: 50%;
-              > p {
-                  width: 90%;
-              }      
-          }
-
-          form {
-              input {
-                  padding: 6%;
-              }
-          }
-
-          [type="submit"] {
-              transition: .6s;
-              &:hover {
-                  background-color: transparent;
-                  color: $defaultColor;
-                  cursor: pointer;
-              }
-          }
-
-          h2 {
-            font-size: 28px;
-          }
+  }
+  // FOOTER
+  .footer-top {
+        flex-direction: row;
+        column-gap: 2vh;
+        > article {
+            width: 25%;
+            > h2 {
+              width: 70%;
+            }
         }
 
-        .footer-bottom {
-            > p {
-              width: 100%;
-                text-align: left;
+        aside {
+            > a {
+                font-size: 18px;
             }
+        }
 
+        .social {
+            column-gap: 1vh;  
+            a {
+                height: 3vh;
+                width: 3vh;
+            }
+        }
+
+        > section {
+            width: 25%;
             > ul {
-                width: 90%;
-                justify-content: right;
+                row-gap: 1vh;
+                font-size:  18px;
             }
         }
-}
+
+        > aside {
+            width: 50%;
+            > p {
+                width: 90%;
+            }      
+        }
+
+        form {
+            input {
+                padding: 6%;
+            }
+        }
+
+        [type="submit"] {
+            transition: .6s;
+            &:hover {
+                background-color: transparent;
+                color: $defaultColor;
+                cursor: pointer;
+            }
+        }
+
+        h2 {
+          font-size: 28px;
+        }
+      }
+
+      .footer-bottom { 
+          > p {
+              width: 100%;
+              text-align: left;
+          }
+
+          > ul {
+              width: 90%;
+              justify-content: right;
+          }
+      }
 
 }
