@@ -146,11 +146,16 @@
     .intro {
         row-gap: 5vh;
         align-items: center; 
-        > figure {
-            @include fColumn(0vh);
+        > section {
+            @include fColumn(4vh);
             align-items: center;
             width: 90%;
-            > img {
+
+            > figure {
+                width: 100%;
+            }
+            
+            img {
                 width: 100%;             
             }
         }
@@ -185,6 +190,7 @@
         > .ship {
             @include fColumn(5vh);
             width: 100%;
+            align-items: center;
             background-color: $gainsBoro;
             padding-bottom: 7vh;
 
