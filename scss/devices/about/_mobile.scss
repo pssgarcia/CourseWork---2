@@ -14,31 +14,282 @@
         padding-top: 10vh;
         padding-bottom: 10vh;
         width: 90%;
-
-        > section {
-            background-color: $gainsBoro;
-        }
+        @include fColumn(3vh);
+        
     }
 
     /* INTRO */
     .intro {
-        figcaption {
-            display: flex;
+        width: 100%;
+        @include fColumn(5vh);
+        align-items: center;
+
+        > figure {
+            background-color: $gainsBoro;
+            padding-bottom: 4vh;
+            @include fColumn(2vh);
+            > img {
+                width: 100%;
+            }
         }
 
+        figcaption {
+            align-items: center;
+            @include fColumn(2vh);
+            column-gap: 5vh;
+            width: 100%;
+            img {
+                width: 10vw;
+                height: 10vw;
+                border-radius: 50%;
+            }
+
+            section {
+                width: 90%;
+                display: flex;
+                column-gap: 5vw;
+            }
+        }    
+        
+        aside {
+            display: flex;
+            align-items: center;
+            column-gap: 1vw;
+        }
+
+        i,
+        a {
+            color: $defaultColor;
+        }
+
+        a {
+
+            width: 16vh;
+            border-bottom: 1px solid $defaultColor;
+        }
+ 
+        article {
+            width: 90%;
+            @include fColumn(2vh);
+        }
+        
         img {
             width: 100%;
         }
 
-        .profile{
-            border-radius: 50%;
-            width: 5vh;
-            height: 5vh;
+    }
+
+    /* KEYWORD */
+    .keyword {
+        background-color: $gainsBoro;
+        width: 90%;
+        padding: 5%;
+        form {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        input {
+            border: none;
+            width: 100%;
+            padding: 3%;
+        }
+        [type="email"] {
+            width: 60%;
+            
+        }
+    
+        [type="submit"] {
+            background-color: $defaultColor;
+            color: $gainsBoro;
+            width: 10%;
+        }
+    }
+
+    /* CATEGORIES */
+    .categories {
+        background-color: $gainsBoro;
+        padding: 5%;
+        display: flex;
+        @include fCenter;
+        > ul {
+            width: 80%;
+            display: flex;
+            @include fColumn(0.5vh);
+            @include fCenter;
+        }
+        li {
+            padding: 3%;
+            width: 100%;
+            background-color: $white;
+            display: flex;
+            justify-content: space-between;
+        }
+        span {
+            display: flex;
+            @include fCenter;
+            width: 10%;
+            background-color: $gainsBoro;
+            border-radius: 10%;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        aside {
+            display: flex;
+            @include fCenter;
+            column-gap: 1vh;
+        }
+        i {
+            color: $defaultColor;
+        }
+        a {
+            color: black;
+            font-size: 13px;
         }
         
     }
 
-    
+    /* RECENT */
+    .recent {
+        @include fColumn(2vh);
+        > figure {
+            display: flex;
+            background-color: $gainsBoro;
+        }
+
+        img {
+            width: 10vh;
+            height: 10vh;
+        }
+        figcaption {
+            display: flex;
+            @include fCenter;
+        }
+        p {
+            color: black;
+            font-size: 14px;
+            width: 90%;
+        }
+    }
+
+    /* TAG */
+    .tag {
+        @include fColumn(2vh);
+        img {
+            width: 100%;
+        }
+        figure {
+            @include fColumn(5vh);
+        }
+        figcaption {
+            @include fColumn(2vh);
+        }
+        ul {
+            display: flex;
+            column-gap: 3vw;
+            row-gap: 1vh;
+            flex-wrap: wrap;
+        }
+
+        li {
+            border-radius: 10%;
+            background-color: $gainsBoro;
+            padding: 2%;
+        }
+
+    }
+
+    /* PLAIN */
+    .plain {
+        img {
+            width: 100%;
+        }
+        > figure {
+            @include fColumn(5vh);
+        }
+        figcaption {
+            @include fColumn(2vh);
+        }
+        article {
+            background-color: $gainsBoro;
+            @include fColumn(3vh);
+            @include fCenter;
+            padding: 10% 5%;
+        }
+        p {
+            text-align: center;
+        }
+        a {
+            background-color: $defaultColor;
+            width: 18vh;
+            height: 5vh;
+            color: $gainsBoro;
+            display: flex;
+            @include fCenter;
+            font-size: 14px;
+        }
+    }
+
+    /* CONTACT */
+    .contact {
+        width: 100%;
+        @include fColumn(2vh);
+        aside {
+            background-color: $defaultColor;
+            display: flex;
+            @include fCenter;
+            height: 10vh;
+            i {
+                color: $gainsBoro;
+            }
+            address {
+                font-size: 18px;
+                font-weight: 600;
+            }    
+        }
+
+        > article {
+            @include fColumn(2vh);
+            > small {
+                font-size: 15px;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+            > h2 {
+                font-weight: 900;
+            }
+            > section {
+                background-color: $gainsBoro
+            }
+        }
+
+        form {
+            @include fColumn(2vh);
+            padding: 5%;
+        }
+        
+        [type="submit"] {
+            background-color: $defaultColor;
+            color: $gainsBoro;
+            width: 20vh;
+        }
+
+        input,
+        textarea {
+            border: none;
+            padding: 5%;
+            background-color: white;
+        }
+
+        textarea {
+            height: 10vh;
+            resize: none;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
 
     /* FOOTER */
     footer {
@@ -46,57 +297,75 @@
         align-items: center;
         background-color: $darkGray;
         width: 100%;
-        padding-top: 10vh;
 
-        ul {
+        form {
             display: flex;
-            row-gap: 2vh;
-            width: 90%;
-            li {
-                width: 50%;
-                display: flex;
-                @include fCenter;
-            }
-            a {
-                display: flex;
-                @include fCenter;
-                border: 1px solid $gainsBoro;
-                border-radius: 50%;
-                width: 3vh;
-                height: 3vh;
-            }
+            width: 100%;
+            padding-bottom: 10vh;
         }
-
+    
+        input {
+            border: none;
+            width: 100%;
+            padding: 5%;
+        }
+    
+        [type="email"] {
+            width: 60%;
+        }
+    
+        [type="submit"] {
+            background-color: $defaultColor;
+            color: $gainsBoro;
+            width: 30%;
+        }
+        
         /* FOOTER TOP*/
         > section {
             width: 90%;
-            @include fColumn(2vh);
+            @include fColumn(5vh);
+            padding-top: 5vh;
           
             /* GET IN TOUCH */
             > article {
                 @include fColumn(3vh);
-
                 display: flex;
-                width: 40%;
+
+                ul {
+                    display: flex;
+                    width: 50%;
+                    column-gap: 1vh;
+                }
+                li {
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    height: 5vh;
+                    width: 5vh;
+                    display: flex;
+                    @include fCenter;
+                }
             }
 
             /* QUICK LINKS */
             > section {
+                @include fColumn(2vh);
                 > ul {
-                    @include fColumn(1vh);
+                    @include fColumn(2vh);
+                }
+                li {
+                    display: flex;
+                    column-gap: 1vw;
                 }
             }
 
             /* NEWSLETTER*/
             > aside {
                 @include fColumn(2vh);
-                
-                
             }
             
             h3 {
                 color: $defaultColor;
-                padding-bottom: 5%;
+                font-size: 22px;
             }
 
             i,
@@ -109,43 +378,38 @@
         
         /* FOOTER BOTTOM */
         > article {
-    
-            width: 90%;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            width: 80%;
             @include fColumn(2vh);
             > p {
                 color: $gainsBoro;
-                text-align: center;
-                a {
-                    color: $defaultColor;
-                }
+                text-align: center;   
+            }
+
+            a {
+                color: $defaultColor;
             }
 
             ul {
+                width: 100%;
                 display: flex;
                 justify-content: center;
             }
 
             li {
                 display: flex;
-                
-            }
-            
-        }
-        ul {
-                display: flex;
-                justify-content: center;
-             
-            }
-
-            li {
-                display: flex;
-                
                 color: $gainsBoro;
+                width: 100%;
+                justify-content: space-evenly;
             }
+
+        }
+        
     }
 
     hr {
-        color: dimgray;
+        color: $gray;
         width: 100%;
     }
 
@@ -153,34 +417,12 @@
         line-height: 1.5;
     }
 
-    form {
-        display: flex;
-        width: 100%;
-        padding-bottom: 10vh;
-    }
-
-    input {
-        border: none;
-        width: 100%;
-        padding: 3%;
-    }
-
-    [type="email"] {
-        width: 60%;
-    }
-
-    [type="submit"] {
-        background-color: $defaultColor;
-        color: $gainsBoro;
-        width: 40%;
-    }
+    
 
     img {
         width: 30%;
     }
 
-    iframe {
-        width: 80%;
-    }
+    
 
 }
