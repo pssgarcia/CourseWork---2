@@ -43,4 +43,24 @@
             }
         }
     }
+    footer{
+        align-items: normal;
+        > section{
+            flex-direction: row;
+            section,
+            article,
+            aside{
+                width: 100%;
+            }
+        }
+        >article{
+            align-items: flex-start;
+            ul{
+                width: 95%;
+                align-items: end;
+                justify-content: end;
+                
+            }
+        }
+    }
 }

@@ -10,30 +10,22 @@
                 height: 30px;
                 a{
                     color: $white;
+                    font-size: 15px;
                 }
                 span{
                     color: $white;
                 }
             }
         }
-        .nav{
+        .navigation{
+            position: relative;
             background-color: $white;
+            width: 96%;
+            // border: 1px solid red;
             display: flex;
             height: 8vh;
-            >aside{
-                display: flex;
-                @include fCenter;
-                column-gap: 2vh;
-                padding-left: 2vh;
-                i{
-                    color: $defaultColor;
-                    font-size: 30px;
-                }
-                p{
-                    color: $defaultColor;
-                    font-size: 20px;
-                }
-            }
+            padding-left: 2%;
+            padding-right: 2%;
             aside{
                 >a{
                     display: none
@@ -67,14 +59,28 @@
     }
 
     nav {
-        @include fCenter;
+        align-items: center;
+        width: 100%;
         display: flex;
+        >aside{
+            display: flex;
+            align-items: center;
+            column-gap: 2vh;
+            i{
+                color: $defaultColor;
+                font-size: 30px;
+            }
+            p{
+                color: $defaultColor;
+                font-size: 20px;
+            }
+        }
         >ul{
             display: none
         }
         
         details{
-            width: 100%;
+            width: 95%;
             text-align: right;
             position: absolute;
             summary{
@@ -264,12 +270,20 @@
     }
     // FOOTER
     footer{
+        @include fColumn(0vh);
+        align-items: center;
         h3{
             color: $defaultColor;
         }
+        hr{
+            width: 100%;
+        }
         background-color: $darkGray;
         >section{
+            padding-top: 2vh;
             padding-left: 2vh;
+        width: 96%;
+            height: 60vh;
             @include fColumn(3vh);
             >article{
                 @include fColumn(3vh);                
@@ -301,7 +315,10 @@
                 }
             }
             section{
-                @include fColumn(0vh);
+                @include fColumn(3vh);
+                ul{
+                  @include fColumn(2vh);  
+                }
                 i,a{
                     color: $white;
                 }
@@ -314,7 +331,6 @@
                 form{
                     display: flex;
                     width: 100%;
-                    padding-bottom: 15vh;
                     input{
                         border: none;
                         width: 100%;
@@ -343,7 +359,10 @@
                 }
             }
             ul{
+                width: 95%;
                 display: flex;
+                align-items: center;
+                justify-content: center;
                 column-gap: 3vh;
                 li{
                     color: $white;
