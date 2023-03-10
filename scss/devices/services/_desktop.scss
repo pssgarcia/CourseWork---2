@@ -1,4 +1,5 @@
 @media(min-width: $desktopScreen){
+    // HEADER 
     header{
         section{
             flex-direction: row;
@@ -6,10 +7,9 @@
             padding-left: 3%;
             padding-right: 3%;
         }
+        // NAVEGATION MENU
         .navigation{
-            // align-items: center;
             justify-content: space-between;
-            // padding-right: 3%;
             nav{
                 justify-content: space-between;
                 ul{
@@ -36,6 +36,7 @@
                     }
                    }
                 }
+                // BUTTON TO RIGHT
                 section{
                     background-color: $defaultColor;
                     @include fColumn(0vh);
@@ -47,12 +48,14 @@
                     }
                 }
             }
+            // HAMBURGER MENU
             details{
                 display: none;
             }
            
         }
     }
+    // PART-1 START
     .part-1{
         article{
             column-gap: 4vh;
@@ -60,6 +63,8 @@
             flex-wrap: nowrap;
         }
     }
+    // PART-1 END
+    // PART-2 START
     .part-2{
         flex-direction: row;
         section{
@@ -72,10 +77,14 @@
             }
         }
     }
+    // PART-2 END
+    // FOOTER START
     footer{
+        // FOOTER TOP
         >section{
             height: 40vh;
         }
+        // FOOTER BOTTOM
         >article{
             flex-direction: row;
             align-items: center;
@@ -85,4 +94,5 @@
             }
         }
     }
+    // FOOTER END
 }
