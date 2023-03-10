@@ -169,6 +169,7 @@
         }
 
         > section {
+            @include fColumn(2);
             width: 90%;
         } 
     }
