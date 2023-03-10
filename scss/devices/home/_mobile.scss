@@ -238,15 +238,50 @@
                 font-size: 30px;
                 width: 80%;
                 text-align: center
+            }   
+        }
+
+        > section {
+            @include fColumn(10vh);
+            align-items: center
+        }
+        
+        figure {
+            @include fColumn(0vh);
+            align-items: center;
+            width: 90%;
+            > img {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+        figcaption {
+            @include fColumn(1vh);
+            @include fCenter;
+            width: 100%;
+            height: 15vh;
+            background-color: $gainsBoro;
+            border-bottom: 5px solid $defaultColor;
+
+            > h4 {
+                font-weight: 700;
+                font-size: 20px;
             }
 
+            > small {
+                color: $gray;
+                font-size: 18px;
+                font-weight: 500;
+            }
         }
     }
 
     // NEWS
     .news {
-        row-gap: 4vh;
+        row-gap: 7vh;
         align-items: center;
+        padding-bottom: 10vh;
         > article {
                 @include fColumn(1vh);
                 align-items: center;
