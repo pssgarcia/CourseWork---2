@@ -13,18 +13,57 @@
               height: 8vh;
               font-size: 15px;
             }
-            
-            .middle  {
+
+        summary {
+            padding: 1vh;
+            font-size: 25px;
+            color: $gray;
+            text-align: right;
+        }
+
+        details {
             display: flex;
-            justify-content: space-between;
+            position: absolute;
+            text-align: right;
+            width: 90%;
+            
+            > ul {
+                @include fColumn(5vh);
+                width: 100%;
+                background-color: $white;
+                position: absolute;
+                // padding-top: 5vh;
+            }
+
+            a {
+                text-transform: uppercase;
+                display: flex;
+                justify-content: right;
+                color: $defaultColor;
+                padding: 2%;
+            }
+
+            li {
+                background-color: $white;
+                border-bottom: 1px solid $defaultColor;
+                height: 6vh;
+            }
+        }
+            
+        nav  {
+            display: flex;
+            justify-content: space-betwee;
+            align-items: center;
             background-color: $white;
-            padding: 2vh;
+            padding: 3vh;
+            width: 90%;
+            position: relative;
             
             > a {
-              display: none;
+                display: none;
             }
             
-            > strong {
+            > aside {
                 display: flex;
                 column-gap: 1vh;
                 align-items: center;
@@ -32,15 +71,20 @@
                 padding-left: 3%;
                 font-size: 25px;
 
-                > p {
-                  font-weight: 900;
+                > h1 {
+                    font-weight: 900;
+                }
+
+                > i {
+                    color: $defaultColor;
                 }
             }
         }
+        
         aside {
-          display: flex;
-          column-gap: 2vh;
-          font-size: 13px;
+            display: flex;
+            column-gap: 2vh;
+            font-size: 13px;
           
           > span {
             color: white;
@@ -60,7 +104,7 @@
 
             > h1 {
                 color: $defaultColor;
-                font-size: 28px;
+                font-size: 25px;
                 font-weight: 900;
             }
 
@@ -88,38 +132,11 @@
                 }
             }
         }
-    nav {
-        position: relative;
-        width: 10%;
-        > details {
-          padding-right: 2vh;
-          display: flex;
-          width: 100%;
-          position: absolute;
-          justify-content: center;
-            > ul {
-                position: absolute;
-                width: 100%;
-                border: 1px solid red;
-                row-gap: 2vh;
-              }
-          
-          > summary {
-              outline: 1px solid;
-              outline-color: $gainsBoro;
-              text-align: center;
-              padding: 1vh;
-              width: 100%;
-              font-size: 23px;
-              color: $gray;
-          }
 
-        }
-
-        > ul {
+        nav > ul {
             display: none;
         }
-    }
+    
     
     // MAIN
     .intro,
@@ -339,7 +356,6 @@
             width: 9vh;
             height: 6vh;
         }
-      
 }
 
     // FOOTER
