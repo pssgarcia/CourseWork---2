@@ -217,7 +217,11 @@
             li {
                 display: flex;
                 align-items: center;
-                column-gap: 2vh
+                column-gap: 2vh;
+                > p {
+                    color: black;
+                    font-weight: 600;
+                }
             }
 
             i {

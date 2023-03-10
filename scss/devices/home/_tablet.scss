@@ -1,4 +1,50 @@
 @media (min-width: $tabletScreen) {
+    // INTRODUCTION
+    .intro {
+        row-gap: 2vh;
+        > article {
+            row-gap: 1vh;
+            > small {
+                font-size: 20px;
+            }
+
+            > h2 {
+                font-size: 35px;
+            }
+          }
+        > .ship {
+            row-gap: 2vh;
+
+            > figcaption {
+                row-gap: 2vh;
+            }
+
+            small {
+              font-size: 20px;
+            }
+
+            h2 {
+                font-size: 35px;
+            }
+
+            li {
+                column-gap: 1vh;
+            }
+
+            a {
+                width: 17%;
+                padding: 2%;
+                font-weight: 400;
+                transition: .6s;
+                &:hover {
+                    background-color: $white;
+                    color: $defaultColor;
+                }
+            }
+        
+          }
+    }
+  
     // TEAM
     .team {
         > section {
