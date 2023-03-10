@@ -22,25 +22,27 @@
 
     /* INTRO */
     .intro {
+        figcaption {
+            display: flex;
+        }
+
         img {
             width: 100%;
         }
+
         .profile{
-            width: 10%;
             border-radius: 50%;
             width: 5vh;
             height: 5vh;
         }
-        figcaption {
-            display: flex;
-        }
+        
     }
 
     
 
     /* FOOTER */
     footer {
-        @include fColumn;
+        @include fColumn(0vh);
         align-items: center;
         background-color: $darkGray;
         width: 100%;
@@ -68,12 +70,12 @@
         /* FOOTER TOP*/
         > section {
             width: 90%;
-            @include fColumn;
-            row-gap: 2vh;
+            @include fColumn(2vh);
+          
             /* GET IN TOUCH */
             > article {
-                @include fColumn;
-                row-gap: 3vh;
+                @include fColumn(3vh);
+
                 display: flex;
                 width: 40%;
             }
@@ -81,15 +83,14 @@
             /* QUICK LINKS */
             > section {
                 > ul {
-                    @include fColumn;
-                    row-gap: 1vh;
+                    @include fColumn(1vh);
                 }
             }
 
             /* NEWSLETTER*/
             > aside {
-                @include fColumn;
-                row-gap: 2vh;
+                @include fColumn(2vh);
+                
                 
             }
             
@@ -110,9 +111,7 @@
         > article {
     
             width: 90%;
-            @include fColumn;
-            row-gap: 2vh;
-            padding: 5% 10%;
+            @include fColumn(2vh);
             > p {
                 color: $gainsBoro;
                 text-align: center;
