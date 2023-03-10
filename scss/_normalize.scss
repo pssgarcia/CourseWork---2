@@ -30,9 +30,8 @@ body,
 header,
 main,
 figcaption,
-main form
-{
-    @include fColumn
+main form {
+    @include fColumn(0);
 }
 
 header {
