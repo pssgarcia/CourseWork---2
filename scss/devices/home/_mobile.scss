@@ -129,6 +129,7 @@
       @include fColumn(0vh);
     }
 
+    // INTRODUCTION
     .intro {
         row-gap: 5vh;
         align-items: center; 
@@ -152,7 +153,7 @@
         }
 
         > article {
-            @include fColumn(0vh);
+            @include fColumn(2vh);
             width: 90%;
 
             > small {
@@ -183,4 +184,69 @@
             }
         } 
     }
+
+    // NEWS
+    .news {
+        @include fColumn(4vh);
+        align-items: center;
+        > article {
+                @include fColumn(1vh);
+                align-items: center;
+                > small {
+                        font-weight: 800;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                }
+                > h2 {
+                    font-weight: 900;
+                    font-size: 30px;
+                }
+        }
+
+        > figure {
+                @include fColumn(0vh);
+                align-items: center;
+                width: 85%;
+                > img {
+                        width: 100%;
+                }
+        }
+
+        figcaption {
+                @include fColumn(4vh);
+                padding: 5vh;
+                background-color: $gainsBoro;
+                > aside {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 2vh;
+                }
+                > article {
+                        @include fColumn(2vh);       
+                } 
+                
+            }
+        a {
+            color: $defaultColor;
+            border-bottom: 1px solid $defaultColor;
+            width: 45%;
+            font-weight: 600;
+        }
+
+        aside p {
+            width: 50%;
+            i {
+                color: $defaultColor;
+                font-weight: 400;
+            }
+        }
+
+        aside img {
+            border-radius: 50%;
+            width: 9vh;
+            height: 6vh;
+        }
+      
+}
+
 }
