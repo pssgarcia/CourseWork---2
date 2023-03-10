@@ -11,6 +11,7 @@
         >section{
             height: 13vh;
             background-color: $darkGray;
+            padding: 1%;
             @include fColumn(1vh);
             @include fCenter;
             aside{
@@ -147,8 +148,8 @@
             column-gap: 5vh;
             width: 100%;
             img {
-                width: 10vw;
-                height: 10vw;
+                width: 3vh;
+                height: 3vh;
                 border-radius: 50%;
             }
 
@@ -171,7 +172,6 @@
         }
 
         a {
-
             width: 16vh;
             border-bottom: 1px solid $defaultColor;
         }
