@@ -249,4 +249,99 @@
       
 }
 
+    // FOOTER
+    footer {
+        background-color: $darkGray;
+        a, i, p {
+            color: $white
+        }
+    }
+    
+    .footer-top {
+        @include fColumn(4vh);
+        justify-content: center;
+        padding-left: 2vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        h2 {
+            color: $defaultColor;
+        }
+
+        ul {
+            @include fColumn(2vh);
+        }
+
+        > article {
+            @include fColumn(3vh);
+            
+        }
+
+        > section {
+            @include fColumn(3vh);
+            li {
+                display: flex;
+                column-gap: 1vh;
+                align-items: center;
+            }
+            i {
+                font-size: 12px;
+            }
+        }
+        
+        .social {
+            flex-direction: row;
+            column-gap: 2vh;
+            a {
+                display: flex;
+                border-radius: 50%;
+                border: 1px solid $white;
+                @include fCenter;
+                height: 5vh;
+                width: 5vh;
+
+            }
+        }
+
+        > aside {
+            @include fColumn(3vh);
+        }
+
+        form {
+            display: flex;
+            > input {
+                padding: 4%;
+            }
+        }
+
+        [type="submit"] {
+            background-color: $defaultColor;
+            color: $white;
+            font-weight: 500;
+            border: none;
+        }
+    
+    }
+
+    .footer-bottom {
+        @include fColumn (2vh);
+        @include fCenter;
+        padding: 5%;
+        padding-bottom: 4vh;
+        border-top: 1px solid $gray;
+        > p {
+            text-align: center;
+            color: $white;
+        }
+
+        span {
+            color: $defaultColor;
+        }
+
+        > ul {
+            display: flex;
+            column-gap: 5vh;
+        }
+
+    }
+
 }
