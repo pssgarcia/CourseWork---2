@@ -1,0 +1,73 @@
+@media (min-width: $tabletScreen) {
+
+
+    header {
+        > section {
+            height: 5vh;
+        }
+        > article {
+            > section {
+                height: 30vh;
+            }
+        }
+    }
+
+    main h3 {
+        font-size: 24px;
+    }
+    
+    .intro {
+        a {
+            width: 9vh;
+        }
+        
+    }
+
+    .recent {
+        >figure {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+        }
+        img {
+            width: 20%;
+        }
+
+        figcaption {
+            width: 80%;
+        }
+
+        p {
+            font-size: 18px;
+            width: 90%;
+        }
+    }
+
+    footer > section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 1vh;
+        width: 90%;
+        
+        > article {
+            width: 30%;
+            ul {
+                width: 100%;
+            }
+        }
+
+        > section {
+            width: 30%;
+        }
+
+        > aside {
+            width: 40%;
+        }
+    }
+
+    a:hover {
+        color: $defaultColor;
+    }
+    
+}
