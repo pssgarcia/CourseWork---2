@@ -1,0 +1,236 @@
+@media (min-width: $desktopScreen) {
+  // NAV
+  header {
+      nav {
+          details {
+              display: none;
+          }
+    
+          > ul {
+              display: flex;
+              column-gap: 10vh;
+    
+              a {
+                  color: $defaultColor;
+                  font-weight: 700;
+                  transition: .6s;
+                  display: flex;
+                  &:hover {
+                      background-color: $defaultColor;
+                      color: $white;
+                  }
+              }
+          }
+      }
+  }
+
+  header {
+      .bottom {
+          height: 60vh;
+
+          form {
+              width: 40%;
+          }
+      }
+
+      .top {
+          flex-wrap: nowrap;
+          aside {
+              font-size: 15px;
+          }
+      }
+
+  }
+
+  header {
+      nav {
+          width: 98%;
+          > a {
+              display: flex;
+              color: $defaultColor;
+              font-weight: 700;
+                  &:hover {
+                      background-color: $defaultColor;
+                      color: $white;
+                  }
+          }
+      }
+  }
+
+
+  
+  // INTRODUCTION
+  .intro {
+      row-gap: 8vh;
+      align-items: center;
+      > section {
+          flex-direction: row;
+          justify-content: center;
+          column-gap: 4vh;
+          > figure {
+            width: 28%;
+          }
+
+          article {
+              width: 67%;
+          }
+
+          h2 {
+              font-size: 30px;
+              width: 50%;
+          }
+
+          small {
+              font-size: 15px;
+          }
+          
+            
+      }
+
+      .ship {
+          flex-direction: row;
+          justify-content: center;
+          column-gap: 4vh;
+          > img {
+              width: 25%;
+              height: 60vh;
+          }
+
+        figcaption {
+            width: 60%;
+            > small {
+                font-size: 15px;
+            }
+
+            > h2 {
+                font-size: 30px;
+                width: 50%;
+            }
+
+            > a {
+                padding: 1vh;
+                width: 15%;
+            }
+        }
+      }
+  }
+  
+  // TEAM
+  .team {
+      > section {
+          flex-wrap: nowrap;
+          column-gap: 4vh;
+      }
+
+      figure {
+          width: 19%;
+          > img {
+              height: 40vh;
+          }
+      }
+
+      figcaption {
+          height: 12vh;
+          transition: .6s;
+          position: relative;
+
+            > aside {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                column-gap: 3vh;
+                height: 100%;
+                bottom: -20%;
+                @include fCenter;
+                transition: .6s;
+                display: flex; 
+                opacity: 0;
+                  &:hover {
+                      opacity: 1;
+                      bottom: 0%;
+                      background-color: $defaultColor;
+                  }
+            }
+
+          a {
+              color: $white;
+              font-size: 23px;
+                &:hover {
+                    color: indigo;
+                }
+          }
+      }
+
+  }
+  
+  // NEWS
+  .news {
+      figcaption {
+          width: 94%;
+          padding: 3%;
+          a {
+              width: 22%;
+          }
+      }
+
+      figure {
+          > img {
+              height: 45vh;
+          }
+      }
+
+      > section {
+          column-gap: 5vh;
+      }
+  }
+  
+  // FOOTER
+    .footer-top {
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 60vh;
+        align-items: center;
+        column-gap: 4vh;
+        > aside {
+            width: 40%;
+        }
+
+        > article {
+            row-gap: 3vh;
+        }
+
+        > section {
+            row-gap: 3vh;
+            > ul {
+                row-gap: 2vh;
+            }
+          }
+
+        form {
+            > input {
+                padding: 3%;
+                width: 100%;
+            }
+        }
+
+        [type="submit"] {
+            width: 30%;
+        }
+
+        .social {
+            a {
+                height: 5vh;
+                width: 5vh;
+            }
+        }   
+    }
+
+    .footer-bottom {
+        padding: 2%;
+        flex-direction: row;
+        > ul {
+            padding-right: 5%; 
+        }
+    }
+}
