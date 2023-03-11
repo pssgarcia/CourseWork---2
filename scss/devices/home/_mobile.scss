@@ -1,0 +1,475 @@
+@media (min-width: $mobileScreen) {
+  // HEADER
+    header {   
+        .top {
+              display: flex;
+              flex-wrap: wrap;
+              @include fCenter;
+              background-color: $darkGray;
+              height: 8vh;
+              font-size: 15px;
+            }
+
+        summary {
+            padding: 1vh;
+            font-size: 25px;
+            color: $gray;
+            text-align: right;
+        }
+
+        details {
+            display: flex;
+            position: absolute;
+            text-align: right;
+            width: 90%;
+            
+            > ul {
+                @include fColumn(5vh);
+                width: 100%;
+                background-color: $white;
+                position: absolute;
+                // padding-top: 5vh;
+            }
+
+            a {
+                text-transform: uppercase;
+                display: flex;
+                justify-content: right;
+                color: $defaultColor;
+                padding: 2%;
+            }
+
+            li {
+                background-color: $white;
+                border-bottom: 1px solid $defaultColor;
+                height: 6vh;
+            }
+        }
+            
+        nav  {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $white;
+            padding: 3vh;
+            width: 89%;
+            position: relative;
+            
+            > a {
+                display: none;
+            }
+            
+            > aside {
+                display: flex;
+                column-gap: 1vh;
+                align-items: center;
+                color: $defaultColor;
+                padding-left: 3%;
+                font-size: 25px;
+
+                > h1 {
+                    font-weight: 900;
+                }
+
+                > i {
+                    color: $defaultColor;
+                }
+            }
+        }
+        
+        aside {
+            display: flex;
+            column-gap: 2vh;
+            font-size: 13px;
+          
+          > span {
+            color: white;
+          }
+
+          i,
+          a {
+            color: $white;
+          }
+        }
+      }
+
+        .bottom {
+            @include fColumn(4vh);
+            @include fCenter;
+            height: 50vh;
+
+            > h1 {
+                color: $defaultColor;
+                font-size: 25px;
+                font-weight: 900;
+            }
+
+            > h2 {
+                color: $white;
+                font-size: 35px;
+                font-weight: 900;
+                width: 50%;
+                text-align: center;
+            }
+
+            form {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                > input {
+                    padding: 4%;
+                }
+
+                [type="submit"] {
+                    background-color: $defaultColor;
+                    border: none;
+                    color: $white;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        nav > ul {
+            display: none;
+        }
+    
+    
+    // MAIN
+    .intro,
+    .team,
+    .news {
+      padding-top: 10vh;
+      @include fColumn(0vh);
+    }
+
+    // INTRODUCTION
+    .intro {
+        row-gap: 5vh;
+        align-items: center; 
+        > section {
+            @include fColumn(4vh);
+            align-items: center;
+            width: 90%;
+
+            > figure {
+                width: 100%;
+            }
+            
+            img {
+                width: 100%;             
+            }
+        }
+
+        figcaption {
+            background-color: $defaultColor;
+            width: 100%;
+            display: flex;
+            @include fCenter;
+            font-size: 24px;
+            font-weight: 800;
+            height: 9vh;
+        }
+
+        > article {
+            @include fColumn(2vh);
+            width: 90%;
+            padding-bottom: 5vh;
+
+            > small {
+                font-weight: 900;
+                font-size: 15px;
+            }
+            
+            > h2 {
+                font-weight: 800;
+                font-size: 27px;
+                width: 80%;
+            }
+        }
+
+        > .ship {
+            @include fColumn(5vh);
+            width: 100%;
+            align-items: center;
+            background-color: $gainsBoro;
+            padding-bottom: 7vh;
+
+            > figcaption {
+                @include fColumn(2vh);
+                align-items: flex-start;
+                height: auto;
+                font-weight: normal;
+                background-color: unset;
+                font-size: inherit;
+                width: 90%;
+            }
+
+            img {
+                width: 90%;
+                height: 50vh;
+            }
+
+            small {
+                font-weight: 900;
+                font-size: 15px;
+            }
+
+            h2 {
+              font-weight: 800;
+              font-size: 27px;
+              width: 80%;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                column-gap: 2vh;
+                > p {
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+
+            i {
+                color: $defaultColor;
+            }
+
+            a {
+                background-color: $defaultColor;
+                color: $white;
+                width: 30%;
+                padding: 3%;
+                text-align: center;
+                font-weight: 600
+            }
+        } 
+    }
+
+    // TEAM
+    .team {
+        row-gap: 4vh;
+        > article {
+            @include fColumn(1vh);
+            align-items: center;
+            > small {
+                    font-weight: 800;
+                    font-size: 15px;
+                    text-transform: uppercase;
+            }
+            > h2 {
+                font-weight: 900;
+                font-size: 30px;
+                width: 80%;
+                text-align: center
+            }   
+        }
+
+        > section {
+            @include fColumn(10vh);
+            align-items: center
+        }
+        
+        figure {
+            @include fColumn(0vh);
+            align-items: center;
+            width: 90%;
+            > img {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+
+        figcaption {
+            @include fColumn(1vh);
+            @include fCenter;
+            width: 100%;
+            height: 15vh;
+            background-color: $gainsBoro;
+            border-bottom: 5px solid $defaultColor;
+
+            > h4 {
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            > small {
+                color: $gray;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            > aside {
+                display: none;
+            }
+        }
+    }
+
+    // NEWS
+    .news {
+        row-gap: 7vh;
+        align-items: center;
+        padding-bottom: 10vh;
+        > article {
+                @include fColumn(1vh);
+                align-items: center;
+                > small {
+                        font-weight: 800;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                }
+                > h2 {
+                    font-weight: 900;
+                    font-size: 30px;
+                }
+        }
+
+        > section {
+            @include fColumn(5vh);
+            align-items: center
+        }
+
+        figure {
+                @include fColumn(0vh);
+                align-items: center;
+                width: 85%;
+                > img {
+                    width: 100%;
+                    height: 40vh
+                }
+        }
+
+        figcaption {
+                @include fColumn(4vh);
+                padding: 5vh;
+                background-color: $gainsBoro;
+                > aside {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 2vh;
+                }
+                > article {
+                        @include fColumn(2vh);       
+                } 
+                
+            }
+        a {
+            color: $defaultColor;
+            border-bottom: 1px solid $defaultColor;
+            width: 45%;
+            font-weight: 600;
+        }
+
+        aside p {
+            width: 50%;
+            i {
+                color: $defaultColor;
+                font-weight: 400;
+            }
+        }
+
+        aside img {
+            border-radius: 50%;
+            width: 9vh;
+            height: 6vh;
+        }
+}
+
+    // FOOTER
+    footer {
+        background-color: $darkGray;
+        a, i, p {
+            color: $white
+        }
+    }
+    
+    .footer-top {
+        @include fColumn(4vh);
+        justify-content: center;
+        padding-left: 2vh;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        h2 {
+            color: $defaultColor;
+        }
+
+        ul {
+            @include fColumn(2vh);
+        }
+
+        > article {
+            @include fColumn(3vh);
+            
+        }
+
+        > section {
+            @include fColumn(3vh);
+            li {
+                display: flex;
+                column-gap: 1vh;
+                align-items: center;
+            }
+            i {
+                font-size: 12px;
+            }
+        }
+        
+        .social {
+            flex-direction: row;
+            column-gap: 2vh;
+            a {
+                display: flex;
+                border-radius: 50%;
+                border: 1px solid $white;
+                @include fCenter;
+                height: 5vh;
+                width: 5vh;
+
+            }
+        }
+
+        > aside {
+            @include fColumn(3vh);
+            > p {
+                width: 80%;
+            }
+        }
+
+        form {
+            display: flex;
+            > input {
+                padding: 4%;
+            }
+        }
+
+        [type="submit"] {
+            background-color: $defaultColor;
+            color: $white;
+            font-weight: 500;
+            border: none;
+        }
+    
+    }
+
+    .footer-bottom {
+        @include fColumn (2vh);
+        @include fCenter;
+        padding: 5%;
+        padding-bottom: 4vh;
+        border-top: 1px solid $gray;
+        > p {
+            text-align: center;
+            color: $white;
+        }
+
+        span {
+            color: $defaultColor;
+        }
+
+        > ul {
+            display: flex;
+            column-gap: 5vh;
+        }
+
+    }
+
+}
