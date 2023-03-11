@@ -1,0 +1,77 @@
+@media (min-width: $tabletScreen){
+    // PART-1 START
+    .part-1 {
+        article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 7vh;
+            padding: 4%;
+            aside{
+                width: 50%;
+                
+            }
+        }
+    }
+    // PART-1 END
+    // PART-2 START
+    .part-2{
+        section{
+            >aside{
+                display: flex;
+                flex-direction: column;
+                row-gap: 3vh;
+            }
+            article{
+                display: flex;
+                flex-direction: row;
+                column-gap: 24vh;
+            }
+        }
+        form{
+            >section{
+                height: 70vh;
+            }
+        }
+    }
+    // PART-2 END
+    // PART-3 START
+    .part-3{
+        @include fColumn(0vh);
+        align-items: center;
+        article{
+            flex-direction: row;
+            width: 90%;
+            column-gap: 3vh;
+            aside{
+                width: 50%;
+            }
+        }
+    }
+    // PART-3 END
+    // FOOTER START
+    footer{
+        align-items: normal;
+        // FOOTER TOP
+        > section{
+            height: 50vh;
+            flex-direction: row;
+            section,
+            article,
+            aside{
+                width: 100%;
+            }
+        }
+        // FOOTER BOTTOM
+        >article{
+            align-items: flex-start;
+            ul{
+                width: 95%;
+                align-items: end;
+                justify-content: end;
+                
+            }
+        }
+    }
+    // FOOTER END
+}
